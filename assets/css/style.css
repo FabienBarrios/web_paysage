@@ -3686,7 +3686,13 @@ hr {
 }
 .cs_site_header.cs_style_1.cs_sticky_active .cs_main_header_in {
   height: 80px;
+
 }
+
+.cs_sticky_active img{
+  width: 77%;
+}
+
 .cs_site_header.cs_style_1.cs_color_1.cs_sticky_active {
   background-color: var(--white-color);
   -webkit-box-shadow: 0 10px 10px -10px rgba(55, 72, 54, 0.06);
@@ -3732,15 +3738,18 @@ hr {
 }
 .cs_site_branding + .cs_nav {
   margin-left: 80px;
+  width: 10%;
 }
 @media (max-width: 1600px) {
   .cs_site_branding + .cs_nav {
     margin-left: 40px;
+    width: 10%;
   }
 }
 @media (max-width: 1540px) {
   .cs_site_branding + .cs_nav {
     margin-left: 30px;
+  width: 10%;
   }
 }
 
@@ -3985,7 +3994,9 @@ hr {
   .cs_site_branding {
     position: relative;
     z-index: 101;
+    width: 10%;
   }
+
   .cs_nav .cs_nav_list_wrap {
     position: fixed;
     width: 100vw;
@@ -5347,7 +5358,7 @@ hr {
   }
 }
 .cs_card_3_wrap .cs_section_logo img {
-  height: 28px;
+  height: 120px;
 }
 
 .cs_card.cs_style_3 {
