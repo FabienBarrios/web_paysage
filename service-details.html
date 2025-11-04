@@ -3,16 +3,43 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Détails de nos services professionnels de jardinage : entretien personnalisé, élagage expert, aménagement sur mesure. Devis gratuit.">
+    <meta name="keywords" content="détails services, devis jardin, élagage prix, entretien jardin tarif, aménagement paysager devis">
+    <meta name="author" content="TailleZone">
+    <link rel="canonical" href="https://taillezone.fr/service-details.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://taillezone.fr/service-details.html">
+    <meta property="og:title" content="Détails de nos Services - TailleZone">
+    <meta property="og:description" content="Découvrez en détail nos services professionnels de jardinage et paysagisme. Devis gratuit.">
+    <meta property="og:image" content="https://taillezone.fr/assets/img/service_thumb_1.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://taillezone.fr/service-details.html">
+    <meta property="twitter:title" content="Détails de nos Services - TailleZone">
+    <meta property="twitter:description" content="Découvrez en détail nos services professionnels de jardinage et paysagisme.">
+    <meta property="twitter:image" content="https://taillezone.fr/assets/img/service_thumb_1.jpg">
+
     <!-- Favicon Icon -->
     <link rel="icon" href="assets/img/favicon.png">
+
     <!-- Site Title -->
-    <title>TailleZone</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/slick.min.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/lightgallery.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Détails de nos Services - TailleZone | Devis Gratuit</title>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="assets/css/style.css" as="style">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css?v=1.0.0">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css?v=1.0.0">
+    <link rel="stylesheet" href="assets/css/slick.min.css?v=1.0.0">
+    <link rel="stylesheet" href="assets/css/animate.css?v=1.0.0">
+    <link rel="stylesheet" href="assets/css/lightgallery.min.css?v=1.0.0">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
   </head>
   <body>
    <!-- Start Preloader -->
@@ -24,34 +51,9 @@
     <div class="cs_preloader_text">Chargement...</div>
   </div>
   <!-- End Preloader -->
-    <!-- Start Header Section -->
-   <header class="cs_site_header cs_style_1 cs_sticky_header">
-      <div class="cs_main_header">
-        <div class="container">
-          <div class="cs_main_header_in">
-            <div class="cs_main_header_left">
-              <a class="cs_site_branding" href="index.html" style="width: 10%">
-                <img src="assets/img/logo_3.png" alt="Logo" >
-              </a>
-            </div>
-            <div class="cs_main_header_center">
-              <div class="cs_nav cs_heading_color">
-                <nav class="cs_nav_list_wrap text-uppercase">
-                  <ul class="cs_nav_list">
-<!--                    <li><a href="about.html">À PROPOS</a></li>-->
-					<li><a href="services.html">SERVICES</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
-                    <span class="cs_munu_dropdown_toggle"><span></span></span></li>
-                  </ul>
-                </nav>
-              <span class="cs_menu_toggle"><span></span></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <!-- Header will be loaded dynamically -->
+    <div id="header-placeholder"></div>
     <div class="cs_height_125 cs_height_lg_80"></div>
-    <!-- End Header Section -->
     <!-- Start Page Heading Sectoin -->
     <div class="container">
       <div class="row cs_gap_x_40 cs_gap_y_30">
@@ -212,79 +214,14 @@
       </div>
     </section>
     <!-- End Card Section -->
-    <!-- Start Footer Section -->
-   <footer class="cs_footer cs_style_1 cs_color_2">
-	  <div class="container">
-		<div class="cs_footer_row">
-
-		  <!-- Logo + Texte + Newsletter -->
-		  <div class="cs_footer_col">
-			<div class="cs_footer_widget">
-			  <div class="cs_text_widget">
-				<img src="assets/img/logo_3.png" width="15%" alt="Logo" class="wow zoomIn" style="visibility: hidden; animation-name: none;">
-				<p>Restez informé de nos derniers <br>projets et conseils de jardinage.</p>
-			  </div>
-			</div>
-			<div class="cs_footer_widget">
-			  <form action="#" class="cs_newsletter cs_style_1">
-				<input type="email" placeholder="Entrez votre adresse e-mail..." class="cs_newsletter_input">
-				<button type="submit" class="cs_newsletter_btn cs_arrow_btn cs_white_bg cs_heading_color">
-				  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M15.3846 0H0.615385C0.275692 0 0 0.275692 0 0.615385C0 0.955077 0.275692 1.23077 0.615385 1.23077H13.8988L0.180308 14.9495C-0.06 15.1898 -0.06 15.5794 0.180308 15.8197C0.300615 15.94 0.457846 16 0.615385 16C0.772923 16 0.930461 15.94 1.05046 15.8197L14.7692 2.10092V15.3846C14.7692 15.7243 15.0449 16 15.3846 16C15.7243 16 16 15.7243 16 15.3846V0.615385C16 0.275692 15.7243 0 15.3846 0Z" fill="currentColor"/>
-				  </svg>
-				</button>
-			  </form>
-			</div>
-		  </div>
-
-		  <!-- Colonne Support -->
-<!--		  <div class="cs_footer_col">-->
-<!--			<div class="cs_footer_widget">-->
-<!--			  <h4 class="cs_footer_widget_title">SUPPORT</h4>-->
-<!--			  <ul class="cs_footer_widget_menu cs_mp_0">-->
-<!--				<li><a href="faq.html">FAQ</a></li>-->
-<!--				<li><a href="#">GUIDE UTILISATEUR</a></li>-->
-<!--				<li><a href="#">TÉMOIGNAGES</a></li>-->
-<!--				<li><a href="#">SERVICE CLIENT</a></li>-->
-<!--			  </ul>-->
-<!--			</div>-->
-<!--		  </div>-->
-
-		  <!-- Colonne Liens -->
-<!--		  <div class="cs_footer_col">-->
-<!--			<div class="cs_footer_widget">-->
-<!--			  <h4 class="cs_footer_widget_title">LIENS</h4>-->
-<!--			  <ul class="cs_footer_widget_menu cs_mp_0">-->
-<!--				<li><a href="about.html">À PROPOS</a></li>-->
-<!--				<li><a href="gallery.html">GALERIE</a></li>-->
-<!--				<li><a href="projects.html">PROJETS</a></li>-->
-<!--				<li><a href="blog.html">BLOG</a></li>-->
-<!--			  </ul>-->
-<!--			</div>-->
-<!--		  </div>-->
-
-		  <!-- Colonne Services -->
-		  <div class="cs_footer_col">
-			<div class="cs_footer_widget">
-			  <h4 class="cs_footer_widget_title">SERVICES</h4>
-			  <ul class="cs_footer_widget_menu cs_mp_0">
-				<li><a href="service-details.html">JARDIN PRIVÉ</a></li>
-				<li><a href="service-details.html">SÉLECTION DE PLANTES</a></li>
-				<li><a href="service-details.html">AMÉNAGEMENT EXTÉRIEUR</a></li>
-				<li><a href="service-details.html">ÉLAGAGE</a></li>
-			  </ul>
-			</div>
-		  </div>
-
-		</div>
-	  </div>
-	</footer>
-    <!-- End Footer Section -->
-    <!-- Script -->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/jquery.slick.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- Footer will be loaded dynamically -->
+    <div id="footer-placeholder"></div>
+    <!-- Scripts -->
+    <script src="assets/js/includes.js?v=1.0.0"></script>
+    <script src="assets/js/jquery-3.7.1.min.js?v=1.0.0"></script>
+    <script src="assets/js/jquery.slick.min.js?v=1.0.0" defer></script>
+    <script src="assets/js/wow.min.js?v=1.0.0" defer></script>
+    <script src="assets/js/main.js?v=1.0.0" defer></script>
     <div class="cs_video_popup">
       <div class="cs_video_popup-overlay"></div>
       <div class="cs_video_popup-content">

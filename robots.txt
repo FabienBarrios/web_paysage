@@ -1,0 +1,12 @@
+# robots.txt pour TailleZone
+
+User-agent: *
+Allow: /
+
+# Bloquer les dossiers sensibles
+Disallow: /assets/
+Disallow: /.git/
+Disallow: /.idea/
+
+# Sitemap
+Sitemap: https://taillezone.fr/sitemap.xml
