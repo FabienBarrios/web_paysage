@@ -5737,4 +5737,54 @@ hr {
   .cs_card.cs_style_6 .cs_card_right {
     max-width: 800px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* Copy Email Notification Bubble */
+.copy-notification {
+  position: absolute;
+  background: var(--heading-color);
+  color: var(--white-color);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  transform: translate(-50%, -10px) scale(0.9);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.copy-notification.show {
+  opacity: 1;
+  transform: translate(-50%, 0) scale(1);
+}
+
+.copy-notification svg {
+  flex-shrink: 0;
+}
+
+.copy-notification::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--heading-color);
+}
+
+/* Hover effect on email and phone */
+#email-copy:hover,
+#phone-copy:hover {
+  color: var(--accent-color);
+}
+
+/*# sourceMappingURL=style.css.map */

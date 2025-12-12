@@ -383,4 +383,40 @@
         });
     });
   }
+
+  /*--------------------------------------------------------------
+    12. Copy Email Function
+  --------------------------------------------------------------*/
+  window.copyEmail = function(element) {
+    const email = element.textContent;
+
+    // Copier dans le presse-papiers
+    navigator.clipboard.writeText(email).then(function() {
+      // Créer la bulle de notification si elle n'existe pas
+      let notification = document.getElementById('copy-notification');
+      if (!notification) {
+        notification = document.createElement('div');
+        notification.id = 'copy-notification';
+        notification.className = 'copy-notification';
+        notification.innerHTML = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3333 4L6 11.3333L2.66667 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Copié !</span>';
+        document.body.appendChild(notification);
+      }
+
+      // Positionner la bulle près de l'élément cliqué
+      const rect = element.getBoundingClientRect();
+      notification.style.top = (rect.top + window.scrollY - 50) + 'px';
+      notification.style.left = (rect.left + rect.width / 2) + 'px';
+
+      // Afficher la bulle
+      notification.classList.add('show');
+
+      // Cacher la bulle après 2 secondes
+      setTimeout(function() {
+        notification.classList.remove('show');
+      }, 2000);
+    }).catch(function(err) {
+      console.error('Erreur lors de la copie:', err);
+    });
+  };
+
 })(jQuery); // End of use strict
