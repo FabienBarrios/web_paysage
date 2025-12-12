@@ -52,6 +52,13 @@
     }
   });
 
+  // Réinitialiser le menu mobile après le chargement dynamique du header
+  document.addEventListener('includeLoaded', function(e) {
+    if (e.detail.elementId === 'header-placeholder') {
+      mainNav();
+    }
+  });
+
   $(window).on('scroll', function () {
     stickyHeader();
   });

@@ -4009,6 +4009,7 @@ hr {
     padding-top: 80px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    z-index: 100;
   }
   .cs_nav .cs_nav_list_wrap.cs_active {
     left: 0vw;
@@ -4047,6 +4048,7 @@ hr {
     top: 27px;
     right: 30px;
     color: var(--white-color);
+    z-index: 101;
   }
   .cs_menu_toggle span,
   .cs_menu_toggle span:before,
