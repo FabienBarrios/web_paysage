@@ -4,7 +4,6 @@ User-agent: *
 Allow: /
 
 # Bloquer les dossiers sensibles
-Disallow: /assets/
 Disallow: /.git/
 Disallow: /.idea/
 

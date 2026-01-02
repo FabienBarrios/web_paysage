@@ -40,10 +40,11 @@
     <link rel="stylesheet" href="assets/css/animate.css?v=1.0.0">
     <link rel="stylesheet" href="assets/css/lightgallery.min.css?v=1.0.0">
     <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
+    <link rel="stylesheet" href="assets/css/custom.css?v=1.0.0">
   </head>
   <body>
     <!-- Préchargeur -->
-    <div class="cs_preloader" style="display: none;">
+    <div class="cs_preloader cs_preloader-hidden">
       <div class="cs_preloader_in">
         <span></span>
         <span></span>
@@ -56,7 +57,7 @@
     <div id="header-placeholder"></div>
 
     <!-- En-tête de la page -->
-    <section class="cs_page_heading cs_style_1 cs_bg_filed cs_heading_bg" data-src="assets/img/about_heading_bg.jpg" style="background-image: url('assets/img/about_heading_bg.jpg');">
+    <section class="cs_page_heading cs_style_1 cs_bg_filed cs_heading_bg" data-src="assets/img/about_heading_bg.jpg">
       <div class="container">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
@@ -77,7 +78,7 @@
             <ul class="cs_contact_info cs_mp_0">
               <li>
                 <p class="mb-0">EMAIL</p>
-                <h4 id="email-copy" class="mb-0 cs_fs_20 cs_bold" style="cursor: pointer; transition: color 0.2s;" onclick="copyEmail(this)">taillezone.cj@gmail.com</h4>
+                <h4 id="email-copy" class="mb-0 cs_fs_20 cs_bold cs_clickable-email" onclick="copyEmail(this)">taillezone.cj@gmail.com</h4>
               </li>
               <li>
                 <p class="mb-0">TÉLÉPHONE</p>
@@ -92,22 +93,6 @@
 <!--            <div class="cs_section_heading cs_style_4 cs_mb_25">-->
 <!--              <h2 class="cs_section_title cs_fs_32 cs_bold mb-0">ENVOYEZ-NOUS UN <span>MESSAGE</span></h2>-->
 <!--            </div>-->
-<!--            <form action="https://api.web3forms.com/submit" method="POST" class="row cs_gap_y_24" id="cs_form">-->
-<!--              <input type="hidden" name="access_key" value="cd98b256-0db3-478c-ab28-1ec94f80447c">-->
-<!--              <div class="col-sm-6">-->
-<!--                <input type="text" name="name" class="cs_form_field" placeholder="Nom" required>-->
-<!--              </div>-->
-<!--              <div class="col-sm-6">-->
-<!--                <input type="email" name="email" class="cs_form_field" placeholder="Email" required>-->
-<!--              </div>-->
-<!--              <div class="col-lg-12">-->
-<!--                <textarea class="cs_form_field" name="message" placeholder="Message" rows="5" required></textarea>-->
-<!--              </div>-->
-<!--              <div class="col-lg-12">-->
-<!--                <button class="cs_btn cs_style_1 cs_type_1 cs_bold cs_heading_bg cs_white_color w-100" type="submit">Envoyer le message</button>-->
-<!--                <div id="cs_result" class="cs_heading_color"></div>-->
-<!--              </div>-->
-            </form>
         </div>
       </div>
     </div>
@@ -116,7 +101,7 @@
     <!-- Section carte -->
     <section class="cs_half_bg">
       <div class="container">
-        <div class="cs_card cs_style_1 cs_heading_bg cs_bg_filed" data-src="assets/img/card_bg.jpg" style="background-image: url('assets/img/card_bg.jpg');">
+        <div class="cs_card cs_style_1 cs_heading_bg cs_bg_filed" data-src="assets/img/card_bg.jpg">
           <div class="cs_card_top">
             <div class="cs_card_tags">
               <a href="index.html" class="cs_card_tag">Accueil</a>
@@ -137,10 +122,10 @@
     <!-- Footer will be loaded dynamically -->
     <div id="footer-placeholder"></div>
     <!-- Scripts -->
-    <script src="assets/js/includes.js?v=1.0.0"></script>
-    <script src="assets/js/jquery-3.7.1.min.js?v=1.0.0"></script>
-    <script src="assets/js/jquery.slick.min.js?v=1.0.0" defer></script>
-    <script src="assets/js/wow.min.js?v=1.0.0" defer></script>
-    <script src="assets/js/main.js?v=1.0.0" defer></script>
+    <script src="assets/js/includes.js?v=1.0.0" integrity="sha384-wv+OklXIYzDDiNg4GtM+CyoLDt8g/R5PDpex2BKCfD8rZqvjliCB8wZfGQqZYQAl" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.7.1.min.js?v=1.0.0" integrity="sha384-JCZ85lW1QjF1xm6AoWQHqtCkJ/7HKd9WvOD5YmiEtf0E/ctb8j2ErVlW61uGg10C" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.slick.min.js?v=1.0.0" integrity="sha384-jntW9/huXpk/YRwpX2/m+ThPwrL00R/u03Xw/odwtLKZ+ij6sNdGJvKlxhKLgFX+" crossorigin="anonymous" defer></script>
+    <script src="assets/js/wow.min.js?v=1.0.0" integrity="sha384-P6pko8+2QxtSaq+I+e09tpfV36ve3/JxoIBz+tVffNKU8WBMXjP3m9r/olZGTgwk" crossorigin="anonymous" defer></script>
+    <script src="assets/js/main.js?v=1.0.0" integrity="sha384-Y5n8CuU1mQkT8xgFBy50e7jv7B/vIPcLIwW0g0HQY7poJouU2p2v1Uk7wid7c7AH" crossorigin="anonymous" defer></script>
   </body>
 </html>

@@ -8,14 +8,23 @@
 
   /**
    * Charge un fichier HTML et l'insère dans un élément du DOM
-   * @param {string} url - L'URL du fichier à charger
+   * @param {string} url - L'URL du fichier à charger (doit être de confiance)
    * @param {string} elementId - L'ID de l'élément où insérer le contenu
+   *
+   * SÉCURITÉ: Cette fonction charge uniquement des fichiers locaux de confiance.
+   * Elle vérifie que l'URL ne contient pas de protocoles externes.
    */
   function loadHTML(url, elementId) {
     const element = document.getElementById(elementId);
 
     if (!element) {
       console.warn('Element with id "' + elementId + '" not found');
+      return;
+    }
+
+    // Vérification basique de sécurité : s'assurer que l'URL est locale
+    if (url.indexOf('://') !== -1 || url.indexOf('..') !== -1) {
+      console.error('Security: Only local files are allowed');
       return;
     }
 
@@ -27,6 +36,8 @@
         return response.text();
       })
       .then(function(html) {
+        // Utilisation de innerHTML pour les fichiers de confiance locaux uniquement
+        // Ces fichiers (header.html, footer.html) font partie du site
         element.innerHTML = html;
 
         // Déclencher un événement personnalisé pour indiquer que le contenu est chargé
